@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom_styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.2/underscore-umd-min.js"> </script> 
+
+</head>
+<body class="text-center bg-dark text-white">
+    
+    <h1 class="p-1 bg-secondary">
+        <span id="title"> Movie Trivia <img src='img/popcorn.png' alt='Popcorn' width="150"></span>
+    </h1>
+
+    <div><span id="markImg1"></span> 1. What movie is about werewolves and vampires?  </div>
+
+    <div id="q1Choices"></div>    
+
+    <br>
+    <div id="q1Feedback"></div>
+    <br>
+
+    <div> <span id="markImg2"></span> 2. Which of these movies features a strong female protagonist living in 
+        a dystopian world where society is split into districts? </div>
+
+    <input type="checkbox" id="mazeRunner"> <label for="mazeRunner"> The Maze Runner</label>
+    <input type="checkbox" id="divergent"> <label for="divergent"> Divergent</label>
+    <input type="checkbox" id="hungerGames"> <label for="hungerGames"> The Hunger Games </label>
+    <input type="checkbox" id="pride"> <label for="pride"> Pride and Prejudice</label>
+    <br>
+    <div id="q2Feedback"></div>
+    <br>
+
+    <div><span id="markImg3"></span> 3. What is the name of the cowboy from Toy Story? </div>
+    <input type="text" id="q3">
+    <br>
+    <div id="q3Feedback"></div>
+
+    <br>
+
+    <div><span id="markImg4"></span> 4. How many Shrek movies are there (as of now)? </div>
+    <input type="number" id="q4">
+    <br> 
+    <div id="q4Feedback"></div>
+
+    <br>
+    <div> <span id="markImg5"></span> Which movie is the longest? </div>
+    <select id="q5">
+        <option value="">Select One</option>
+        <option value="avatar">Avatar</option>
+        <option value="avengers">Avengers: Endgame</option>
+        <option value="titanic">Titanic</option>
+        <option value="oppenheimer">Oppenheimer</option>
+        
+    </select>
+    <br>
+    <div id="q5Feedback"></div>
+    <hr>
+    <h3 id ="validation" class="bg-danger text-white"></h3>
+    <button class="btn btn-outline-info"> Submit Quiz </button>
+    <br>
+    <h2 id="totalScore" class="text-info"></h2>
+
+    <h3 id="totalAttempts"></h3>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
